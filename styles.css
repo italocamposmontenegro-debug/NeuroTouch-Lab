@@ -28,3 +28,11 @@ main{padding:8px 0 72px 0;max-width:860px;margin:0 auto}
 .duo-arena{height:200px;display:flex;align-items:center;justify-content:center;border:2px dashed #2a2f45;border-radius:16px;margin:12px 0}
 .duo-stim{font-size:42px;font-weight:900;padding:8px 14px;background:#20253a;border:1px solid #2a2f45;border-radius:12px}
 .plot{width:100%;background:#0f1115;border:1px solid #2a2f45;border-radius:12px}
+
+/* --- HOTFIX APPEND --- */
+/* Touch hotfix additions */
+.btn, .target, .big-btn, .rt-arena, .duo-arena, canvas {
+  touch-action: manipulation;        /* evita gestos que bloquean taps */
+  -webkit-user-select: none;
+  user-select: none;
+}
